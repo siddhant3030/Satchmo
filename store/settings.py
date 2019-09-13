@@ -194,5 +194,7 @@ L10N_SETTINGS = {
 
 SKIP_SOUTH_TESTS=True
 
+MEDIA_SECURE_URL = 'https://secure.example.com/static/'
+
 # Load the local settings
 from local_settings import *
