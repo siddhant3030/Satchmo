@@ -179,6 +179,16 @@ SATCHMO_SETTINGS = {
     #'SHOP_URLS' : patterns('satchmo_store.shop.views',)
 }
 
+L10N_SETTINGS = {
+  'currency_formats' : {
+     'EURO' : {'symbol': u'€', 'positive' : u"€%(val)0.2f", 'negative': u"€(%(val)0.2f)",
+               'decimal' : ','},
+  },
+  'default_currency' : 'EURO',
+  'show_admin_translations': False,
+  'allow_translation_choice': False,
+}
+
 SKIP_SOUTH_TESTS=True
 
 # Load the local settings
