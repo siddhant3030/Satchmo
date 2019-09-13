@@ -174,6 +174,9 @@ SATCHMO_SETTINGS = {
     'SHOP_BASE' : '/shop',
     'MULTISHOP' : False,
     'DOCUMENT_CONVERTER': 'shipping.views.HTMLDocument',
+    'WKHTML2PDF_BINARIES': {
+        'linux2': '/path/to/wkhtmltopdf-i386'
+    },
     'PRODUCT_SLUG': 'items',
     'SSL':  True,
     #'SHOP_URLS' : patterns('satchmo_store.shop.views',)
