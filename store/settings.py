@@ -156,7 +156,7 @@ INSTALLED_APPS = (
     'app_plugins',
     'simple',
     'store.localsite',
-    'skeleton',
+    #'skeleton',
 )
 
 AUTHENTICATION_BACKENDS = (
