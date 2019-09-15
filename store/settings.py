@@ -65,7 +65,7 @@ MIDDLEWARE_CLASSES = (
     #"django.middleware.doc.XViewMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "threaded_multihost.middleware.ThreadLocalMiddleware",
-    "satchmo_store.shop.SSLMiddleware.SSLRedirect",
+    "store.shop.SSLMiddleware.SSLRedirect",
     #"satchmo_ext.recentlist.middleware.RecentProductMiddleware",
     #'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
@@ -85,7 +85,7 @@ TEMPLATES = [
         ],
         'OPTIONS': {
             'context_processors': [
-                'satchmo_store.shop.context_processors.settings',
+                'store.shop.context_processors.settings',
                 'django.contrib.auth.context_processors.auth',
                 #'satchmo_ext.recentlist.context_processors.recent_products',
                 # do not forget following. Maybe not so important currently
@@ -107,7 +107,7 @@ ROOT_URLCONF = 'simple.urls'
 
 INSTALLED_APPS = (
     'django.contrib.sites',
-    'satchmo_store.shop',
+    'store.shop',
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.auth',
@@ -124,7 +124,7 @@ INSTALLED_APPS = (
     'livesettings',
     'l10n',
     'satchmo_utils.satchmo_thumbnail',
-    'satchmo_store.contact',
+    'store.contact',
     'tax',
     'tax.modules.no',
     'tax.modules.area',
@@ -157,6 +157,7 @@ INSTALLED_APPS = (
     'simple',
     'store.localsite',
     #'skeleton',
+    'mystore'
 )
 
 AUTHENTICATION_BACKENDS = (
